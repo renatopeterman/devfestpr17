@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.devfestpr.devfestpr17.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:divider="@drawable/list_divider"
+        android:showDividers="middle|end"
+        tools:context="org.devfestpr.devfestpr17.MainActivity">
+
+        <TextView
+            android:id="@+id/item_apis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APIs"
+            style="@style/AppTheme.ListRow.Main"
+            />
+
+        <TextView
+            android:id="@+id/item_interpolators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interpolators"
+            style="@style/AppTheme.ListRow.Main"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.ListSectionHeader"
+            android:text="Physics-based Animations"
+            />
+
+        <TextView
+            android:id="@+id/item_spring_drag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SpringAnimation Drag"
+            style="@style/AppTheme.ListRow.Main"
+            />
+
+        <TextView
+            android:id="@+id/item_spring_drag_advanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SpringAnimation Drag Advanced"
+            style="@style/AppTheme.ListRow.Main"
+            />
+    </LinearLayout>
+</ScrollView>

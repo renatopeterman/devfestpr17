@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_spacing">16dp</dimen>
+
+    <dimen name="row_inset_spacing">@dimen/default_spacing</dimen>
+    <dimen name="row_text_size">18sp</dimen>
+
+    <dimen name="section_header_spacing_horizontal">@dimen/default_spacing</dimen>
+    <dimen name="section_header_spacing_vertical">8dp</dimen>
+    <dimen name="section_header_text_size">12sp</dimen>
+
+    <dimen name="hint_text_size">14sp</dimen>
+</resources>

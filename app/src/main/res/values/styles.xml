@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ListRow">
+        <item name="android:padding">@dimen/row_inset_spacing</item>
+        <item name="android:textSize">@dimen/row_text_size</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="AppTheme.ListRow.Main" parent="AppTheme.ListRow">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.ListSectionHeader">
+        <item name="android:paddingLeft">@dimen/section_header_spacing_horizontal</item>
+        <item name="android:paddingRight">@dimen/section_header_spacing_horizontal</item>
+        <item name="android:paddingTop">@dimen/section_header_spacing_vertical</item>
+        <item name="android:paddingBottom">@dimen/section_header_spacing_vertical</item>
+        <item name="android:textSize">@dimen/section_header_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/section_header</item>
+    </style>
+
+    <style name="AppTheme.TextViewHint">
+        <item name="android:paddingLeft">@dimen/default_spacing</item>
+        <item name="android:paddingRight">@dimen/default_spacing</item>
+        <item name="android:layout_gravity">center_vertical|right</item>
+        <item name="android:textSize">@dimen/hint_text_size</item>
+        <item name="android:textColor">@color/label_hint</item>
+    </style>
+
+    <style name="ScaleTransition.Activity" parent="@android:style/Animation.Activity">
+        <!-- New Activity -->
+        <item name="android:activityOpenEnterAnimation">@anim/activity_anim_rotate_and_scale_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_anim_rotate_and_scale_out</item>
+
+        <!-- Back Activity -->
+        <item name="android:activityOpenExitAnimation">@anim/activity_anim_fade_and_scale_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_anim_fade_and_scale_in</item>
+    </style>
+
+    <style name="AppTheme.ApisActivity" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/ScaleTransition.Activity</item>
+    </style>
+</resources>

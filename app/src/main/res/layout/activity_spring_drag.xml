@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.devfestpr.devfestpr17.SpringDragActivity"
+    >
+
+    <Button
+        android:id="@+id/btn_simple_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="Animação Simples"
+        android:layout_marginBottom="@dimen/default_spacing"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/icon_movement"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_android"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        />
+</FrameLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.devfestpr.devfestpr17.InterpolatorsActivity">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_divider"
+        android:showDividers="middle|end"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="OvershootInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_overshoot_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="AnticipateInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_anticipate_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="AnticipateOvershootInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_anticipate_overshoot_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="BounceInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_bounce_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="LinearInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_linear_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="AccelerateInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_accelerate_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="DecelerateInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_decelerate_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTheme.TextViewHint"
+                android:text="AccelerateDecelerateInterpolator"
+                />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/icon_accelerate_decelerate_interpolator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_android"
+                android:layout_margin="@dimen/default_spacing"
+                />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
