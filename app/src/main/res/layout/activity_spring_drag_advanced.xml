@@ -17,4 +17,86 @@
         android:scaleType="fitCenter"
         android:layout_gravity="center"
         />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_fling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fling? "
+        android:layout_margin="@dimen/default_spacing"
+        android:checked="true"
+        />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_spacing"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/default_spacing"
+            >
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Damping: 0.0f"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek_var_damping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:min="0"
+                android:max="100"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0f"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stiffness: 0.0"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek_var_stiffness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:min="0"
+                android:max="10000"
+                android:layout_marginLeft="1dp"
+                />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10k"
+                />
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>
